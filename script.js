@@ -46,4 +46,4 @@ fetch('http://localhost:3001/todos')
             laterSection.style.display = 'flex';
         });
     })
-    .catch(error => console.error('Error fetching todos:', error));
+    .catch(error => console.error(error));
