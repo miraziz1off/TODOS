@@ -8,6 +8,9 @@ const homepageLink = document.querySelector('#homepage');
 const allTodosSection = document.querySelector('.today');
 const tomorrowSection = document.querySelector('.tomarrow');
 const laterSection = document.querySelector('.later');
+const fortoday = document.querySelector('.fortoday');
+const fortomarrow = document.querySelector('.fortomarrow');
+const forlater = document.querySelector('.forlater');
 
 fetch('http://localhost:3001/todos')
     .then(response => response.json())
@@ -20,6 +23,10 @@ fetch('http://localhost:3001/todos')
         const todayContainer = document.querySelector('.list_today');
         const tomorrowContainer = document.querySelector('.alltodos2');
         const laterContainer = document.querySelector('.alltodos3');
+
+        fortoday.textContent = todayTasks.length ? `FOR TODAY - ${todayTasks.length}` : '';
+    fortomarrow.textContent = tomorrowTasks.length ? `TOMORROW - ${tomorrowTasks.length}` : '';
+    forlater.textContent = laterTasks.length ? `LATER - ${laterTasks.length}` : '';
 
         reload(todayTasks, todayContainer, createTaskElement);
         reload(tomorrowTasks, tomorrowContainer, createTaskElement);

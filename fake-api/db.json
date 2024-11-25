@@ -11,7 +11,7 @@
       "userId": 1,
       "id": "2",
       "title": "quis ut nam facilis et officia qui",
-      "completed": true,
+      "completed": false,
       "left": 0
     },
     {
@@ -95,14 +95,14 @@
       "userId": 1,
       "id": "19",
       "title": "molestiae ipsa aut voluptatibus pariatur dolor nihil",
-      "completed": false,
+      "completed": true,
       "left": 0
     },
     {
       "userId": 1,
       "id": "20",
       "title": "ullam nobis libero sapiente ad optio sint",
-      "completed": true,
+      "completed": false,
       "left": 0
     },
     {
